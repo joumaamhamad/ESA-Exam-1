@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>CSS</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div>
+            <input type="text" name="add" id="addInput" placeholder="Fruit or legume">
+        </div>
+
+        <div>
+            <label>
+                <input type="radio" name="category" value="fruit" id="fruitRadio">
+                Fruit
+            </label>
+            <label>
+                <input type="radio" name="category" value="legume" id="legumeRadio">
+                Legume
+            </label>
+        </div>
+
+        <div><button id="addSpecific">Add to specific list</button></div>
+        <div><button id="addGeneral">Add to general list</button></div>
+    </div>
+
+    <div class="content">
+
+        <div class="actions">
+            <div><button class="search" id="searchButton">Search for item</button></div>
+            <div><button class="delete" id="deleteButton">Delete an item</button></div>
+            <div><input id="searchInput" type="text" name="add" placeholder="Fruit or legume"></div>
+        </div>
+
+        <hr>
+
+        <div class="content-value">
+            <div class="fruit">
+                <div><b>Lists of Fruit</b></div>
+                <div class="fruit-content">
+                    <div>Fruits!-Apple</div>
+                    <div>Fruits!-Orange</div>
+                </div>
+            </div>
+
+            <div class="both">
+                <div><b>Lists of Fruit & legume</b></div>
+                <div class="both-content">
+                    <div>Legumes!-legume1</div>
+                    <div>Legumes!-legume2</div>
+                </div>
+            </div>
+            
+            <div class="legume">
+                <div><b>Lists of legume</b></div>
+                <div class="legume-content">
+                    <div>Legumes!-legume1</div>
+                    <div>Legumes!-legume2</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js.js"></script>
+</body>
